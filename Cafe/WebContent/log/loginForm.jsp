@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<% request.setCharacterEncoding("UTF-8"); %>	
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -62,7 +63,7 @@ hr {
 	<p align="right">
 	<form action="log/loginProc.jsp" method="post" name="form">
 		<a href="index.jsp"> <img
-			src="http://blogpfthumb.phinf.naver.net/20160512_76/starboxteam_1463031045809JbtLH_JPEG/blog_profile.jpg?type=w161"
+			src="../log/image/logo.png"
 			border="0">
 		</a>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -71,7 +72,8 @@ hr {
 			class="inputid">&nbsp; <b>비밀번호 : </b><input type="password"
 			size="10" maxlength="15" name="pass" class="inputpass">&nbsp;&nbsp;
 		<img src="log/image/loginbutton.png" width="50" height="30"
-			align="middle" onclick="loginchk()">
+			align="middle" onclick="loginchk()">&nbsp;&nbsp;&nbsp;|&nbsp;<a
+			href="member/regFormImpl.jsp"> <b>회원가입</b>
 	</form>
 	<hr width="100%">
 
